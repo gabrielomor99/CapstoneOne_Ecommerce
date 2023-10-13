@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Pro Arena Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         .mb-3 {
             margin: 5px;
@@ -14,31 +15,66 @@
         header {
             font-size: 280%;
         }
+        body{
+            margin: 120px;
+        }
     </style>
 </head>
 
 <body>
-    <header>
-        <img src="https://p1.hiclipart.com/preview/125/418/366/basketball-hoop-backboard-canestro-breakaway-rim-nba-net-outline-of-basketball-basketball-court-png-clipart.jpg"
-            width=50 height=40 alt="Basketball Rim"> <b> Sports Pro Arena</b>
-    </header>
-    <main>
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputusername1" class="=form-label">Username</label><br>
-                <input type="username" class="form-control" id="exampleInputusername1" required>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" target="_blank">
+                <img src="https://p1.hiclipart.com/preview/125/418/366/basketball-hoop-backboard-canestro-breakaway-rim-nba-net-outline-of-basketball-basketball-court-png-clipart.jpg"
+                    width=50 height=40 alt="Basketball Rim">
+
+                <b>Sports Pro Arena</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Login.html"target="_blank">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Products.html"target="_blank">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Registration.html"target="_blank">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="checkout.html"target="_blank">Checkout</a>
+                    </li>
+                </ul>
             </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label><br>
-                <input type="password" class="form-control" id="exampleInputPassword1" required>
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </main>
+        </div>
+    </nav>
+    <div class="container">
+
+
+        <main>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputusername1" class="=form-label">Username</label><br>
+                    <input type="username" class="form-control" id="exampleInputusername1" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label><br>
+                    <input type="password" class="form-control" id="exampleInputPassword1" required>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </main>
+    </div>
 </body>
 
 </html>
